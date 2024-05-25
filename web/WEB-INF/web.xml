@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ManageUser</servlet-name>
+        <servlet-class>controllers.ManageUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManageUserView</servlet-name>
+        <servlet-class>view.ManageUserView</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManageOrder</servlet-name>
+        <servlet-class>controllers.ManageOrder</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderView</servlet-name>
+        <servlet-class>view.OrderView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageUser</servlet-name>
+        <url-pattern>/ManageUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManageUserView</servlet-name>
+        <url-pattern>/ManageUserView</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManageOrder</servlet-name>
+        <url-pattern>/ManageOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderView</servlet-name>
+        <url-pattern>/OrderView</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
